@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in JavaScript</title>
+</head>
+<body>
+    <h3>Object Program in JavaScript</h3>
+    <p id="target">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Blanditiis assumenda sequi facilis accusantium obcaecati dolore mollitia 
+        nostrum deserunt, ab iure nobis asperiores,
+        architecto rem aperiam maiores expedita, omnis inventore! Reprehenderit?
+    </p>
+    <button id="btn">Click Here</button>
+    <script>
+        let btn = document.getElementById("btn");
+        let para = document.getElementById("target");
+
+        btn.addEventListener("click",function(){
+            let data = para.innerHTML;
+            alert(data)
+            para.innerHTML = "Hello Guys ! Content is updated."
+
+            para.style.color = "red";
+        })
+        
+    </script>
+</body>
+</html>

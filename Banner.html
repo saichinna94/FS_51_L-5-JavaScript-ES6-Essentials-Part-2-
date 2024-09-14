@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Example</title>
+</head>
+<body>
+    <h2>Banner By Using Interval:</h2>
+    <section>
+        <img src="https://images3.alphacoders.com/133/thumb-1920-1338701.png" alt="" id="ban" width="100%" height="300px">
+        <script>
+            let arr=["https://w0.peakpx.com/wallpaper/435/732/HD-wallpaper-laptop-numbers-dark.jpg","https://images3.alphacoders.com/133/thumb-1920-1338701.png",
+        "https://wallpapergod.com/images/hd/laptop-3200X2000-wallpaper-8djzrlxac1paufg2.jpeg"];
+        let ban=document.getElementById("ban");
+        ind=0;
+        function changeImage(){
+            ban.setAttribute("src",arr[ind]);
+            ind++;
+            if(ind==3){
+                ind=0;
+            }
+        }
+        let interval=setInterval(changeImage,3000);
+        </script>
+    </section>
+</body>
+</html>
